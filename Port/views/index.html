@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifolio</title>
+        <title>Portifolio pessoal</title>
         <link rel="stylesheet" href="../css/index.css">
     </head>
 
@@ -21,10 +21,67 @@
                     </ul>
                 </nav>
                 <div class="header-text">
+                    <!-- <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.55 234.12"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Camada_2" data-name="Camada 2"><g id="Camada_1-2" data-name="Camada 1"><path class="cls-1" d="M177.26,12.67l9.07-11.08A1,1,0,0,0,185.58,0H150.84a1,1,0,0,0-.82.45L96,84.87a1,1,0,0,0,0,1.07l5.27,7.7a1,1,0,0,1-.17,1.28l-7.18,6.18a1,1,0,0,1-1.27,0l-7.18-6.18a1,1,0,0,1-.16-1.28l5.26-7.7a1,1,0,0,0,0-1.07L36.53.45A1,1,0,0,0,35.71,0H1A1,1,0,0,0,.22,1.59L9.29,12.67a1,1,0,0,1,.22.62V224.74a1.09,1.09,0,0,1-.08.39L6.1,232.76A1,1,0,0,0,7,234.12H39.62a1,1,0,0,0,1-1l1.55-59.93a1,1,0,0,1,1.78-.5l34,52.13a1,1,0,0,1,0,1.08l-4.5,6.65a1,1,0,0,0,.8,1.52h38.23a1,1,0,0,0,.8-1.52L108.7,226a1,1,0,0,1,0-1.08l33.94-52.13a1,1,0,0,1,1.79.5L146,233.17a1,1,0,0,0,1,1h32.63a1,1,0,0,0,.89-1.36l-3.33-7.63a1.09,1.09,0,0,1-.08-.39V13.29A1,1,0,0,1,177.26,12.67ZM39.39,100.91V52.59a1,1,0,0,1,1.82-.48l27.7,48.32a1,1,0,0,1-.84,1.45H40.37A1,1,0,0,1,39.39,100.91ZM92.45,194,53.26,130.9a1,1,0,0,1,.82-1.49h78.39a1,1,0,0,1,.82,1.49L94.1,194A1,1,0,0,1,92.45,194Zm53.74-92.09H118.48a1,1,0,0,1-.84-1.45l27.7-48.32a1,1,0,0,1,1.82.48v48.32A1,1,0,0,1,146.19,101.88Z"/></g></g></svg> -->
                     <p>FullStack Developer</p>
                     <h1>Olá, Eu sou<br><span>Raul Mascarenhas</span> </h1>
                 </div>
             </div>
         </div>
+        <!-- -------------------Sobre mim--------------- -->
+        <div id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="../img/imagemTeste2.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Sobre Mim</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Architecto veniam inventore blanditiis suscipit tenetur ut hic eligendi iure 
+                        ducimus, quasi necessitatibus maiores aut iste, aspernatur laudantium! Veniam 
+                        exercitationem placeat nesciunt.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experiencia')">Experiência</p>
+                            <p class="tab-links" onclick="opentab('ensino')">Ensino</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="habilidades">
+                            <ul>
+                                <li><span>Front-end</span><br>Interface gráfica</li>
+                                <li><span>Back-end</span><br>Desenvolvimento web</li>
+                                <li><span>Data analyst</span><br>Análise de Dados</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiencia">
+                            <ul>
+                                <li><span>Nenhuma</span><br>Em busca do meu primeiro Estágio</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="ensino">
+                            <ul>
+                                <li><span>2022 - 2024</span><br>Análise e Desenvolvimento de Sistemas - Fatec Carapicuiba</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }  
+        </script>
     </body>
 </html>
