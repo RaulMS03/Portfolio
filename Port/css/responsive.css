@@ -4,7 +4,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #header{
-        /*background-image: url();*/
+        background-image: url();
     }
     .header-text {
         margin-top: 100%;
@@ -12,6 +12,9 @@ nav .fa-solid {
     }
     .header-text h1 {
         font-size: 30px;
+    }
+    .logo {
+        width: 170px;
     }
     nav .fa-solid {
         display: block;
@@ -21,9 +24,28 @@ nav .fa-solid {
         background-color: #184059;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a::after {
+        background: #FFEAD2;
+    }
+
+    .full {
+        font-size: 26px;
     }
 }
