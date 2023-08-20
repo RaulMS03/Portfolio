@@ -72,10 +72,13 @@ nav .fa-solid {
         flex-basis: 100%;
     }
     .fa-solid.fa-paper-plane{
-        width: 10px;
+        width: 20px;
     }
     .fa-solid.fa-phone {
-        width: 10px;
+        width: 20px;
+    }
+    .contato-esquerda p  {
+        font-size: 15px;
     }
     .copyright {
         font-size: 14px;
