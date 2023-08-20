@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #d1a574;
     color: #FFEAD2;
@@ -394,4 +398,10 @@ form .btn2{
     background: #0b1c26;
     font-weight: 300;
     margin-top: 20px;
+}
+
+#msg {
+    color: #0b1c26;
+    margin-top: -40px;
+    display: block;
 }

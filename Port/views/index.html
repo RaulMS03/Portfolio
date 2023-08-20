@@ -18,11 +18,11 @@
                 <nav>
                     <img src="../img/logoRaul.png" class="logo">
                     <ul id="sidemenu">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">SERVIÇOS</a></li>
-                        <li><a href="#">PROJETOS</a></li>
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="#portfolio">PROJETOS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -162,12 +162,13 @@
                         <a href="../img/curriculo_atualizado.pdf" download class="btn bt2">Baixar CV</a>
                     </div>
                     <div class="contato-direita">
-                        <form>
-                            <input type="text" name="Nome" placeholder="Seu nome" required>
-                            <input type="email" name="Email" placeholder="Seu email" required>
-                            <textarea name="Mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="nome" placeholder="Seu nome" required>
+                            <input type="email" name="email" placeholder="Seu email" required>
+                            <textarea name="mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
                             <button type="submit" class="btn btn2">Enviar</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>

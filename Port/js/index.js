@@ -24,3 +24,22 @@ function closemenu() {
     sidemenu.style.right = "-200px";
     
 }
+
+/* Contato */
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzXGkt4i1iyCVoKHNEhO1cMIgHbbI6ukltXJxPtVBeb-8Jq50sHJg446gCuM1MPVRII_A/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Mensagem enviada com sucesso!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
