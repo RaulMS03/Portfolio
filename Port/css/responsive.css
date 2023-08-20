@@ -17,6 +17,7 @@ nav .fa-solid {
         width: 170px;
     }
     nav .fa-solid {
+        color: #0b1c26;
         display: block;
         font-size: 25px;
     }
@@ -29,6 +30,7 @@ nav .fa-solid {
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s
     }
     nav ul li {
         display: block;
