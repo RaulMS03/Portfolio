@@ -45,12 +45,16 @@ nav .fa-solid {
         left: 25px;
         cursor: pointer;
     }
-
     nav ul li a::after {
         background: #FFEAD2;
     }
-
     .full {
         font-size: 26px;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
     }
 }
