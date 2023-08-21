@@ -400,6 +400,10 @@ form .btn2{
     margin-top: 20px;
 }
 
+.copy-text {
+    color: #FFEAD2;
+}
+
 #msg {
     color: #0b1c26;
     margin-top: -40px;

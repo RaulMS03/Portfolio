@@ -17,15 +17,17 @@ nav .fa-solid {
         font-size: 31px;
     }
     .logo {
+        margin-left: -20px;
+        margin-top: 10px;
         width: 170px;
     }
     nav .fa-solid {
-        color: #0b1c26;
+        color: #FFEAD2;
         display: block;
         font-size: 25px;
     }
     nav ul {
-        background-color: #184059;
+        background-color: #0b1c26;
         position: fixed;
         top: 0;
         right: -200px;
@@ -45,8 +47,11 @@ nav .fa-solid {
         left: 25px;
         cursor: pointer;
     }
+    nav ul li a{
+        color: #FFEAD2;
+    }
     nav ul li a::after {
-        background: #FFEAD2;
+        background: #184059;
     }
     .full {
         font-size: 26px;
@@ -65,7 +70,7 @@ nav .fa-solid {
         font-size: 14px;
     }
     .tab-links {
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 20px;
     }
     .contato-esquerda, .contato-direita {
