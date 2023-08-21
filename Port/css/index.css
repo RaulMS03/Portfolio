@@ -344,6 +344,10 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
+.fa-brands.fa-whatsapp {
+    width: 20px;
+}
+
 .phone {
     font-size: 18px;
     color: #FFEAD2;
