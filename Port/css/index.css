@@ -344,6 +344,15 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
+.phone {
+    font-size: 18px;
+    color: #FFEAD2;
+}
+
+.phone:hover {
+    color: #0b1c26;
+}
+
 .icones-redes-sociais {
     margin-top: 30px;
 }
