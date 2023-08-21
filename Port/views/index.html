@@ -162,9 +162,9 @@
                         <a href="../img/curriculo_atualizado.pdf" download class="btn bt2">Baixar CV</a>
                     </div>
                     <div class="contato-direita">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="nome" placeholder="Seu nome" required>
-                            <input type="email" name="email" placeholder="Seu email" required>
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbwW823EqS3X22-RhuAqHGpwZp8hCG8FRArgWSIx3ObpiBy7P2oOrpfDRSDE_UqsBk0Sbg/exec" name="submit-to-google-sheet">
+                            <input type="text" name="nome" placeholder="Seu Nome" required>
+                            <input type="email" name="email" placeholder="Seu Email" required>
                             <textarea name="mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
                             <button type="submit" class="btn btn2">Enviar</button>
                         </form>
